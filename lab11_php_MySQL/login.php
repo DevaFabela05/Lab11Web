@@ -14,12 +14,12 @@ $sql = "SELECT * FROM user WHERE username = '{$user}'
 AND password = md5('{$password}') ";
 $result = mysqli_query($conn, $sql);
 if ($result && mysqli_affected_rows($conn) != 0)
-{
+
 $_SESSION['isLogin'] = true;
 $_SESSION['user'] = mysqli_fetch_array($result);
 
-header('location: index.php.php');
-} else
+header('location: index.php');
+} else {
 $errorMsg = "<p style=\"color:red;\">Gagal Login, silakan ulangi lagi.</p>";
 }
 

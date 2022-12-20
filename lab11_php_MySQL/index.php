@@ -18,7 +18,12 @@ $result = mysqli_query($conn, $sql);
 <body>
     <div class="container">
 
-        <h2>Ini Halaman Data Barang</h2>
+        <h2>Data Barang</h2>
+        <nav>
+<a href="home.php">Home</a>
+<a href="about.php">Tentang</a>
+<a href="kontak.php">Kontak</a>
+</nav>
 
         <a href="tambah.php">Tambah Barang</a>
         <br></br>
