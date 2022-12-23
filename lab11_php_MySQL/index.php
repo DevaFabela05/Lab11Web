@@ -27,6 +27,7 @@ $result = mysqli_query($conn, $sql);
 
         <a href="tambah.php">Tambah Barang</a>
         <br></br>
+        
 
         <div class="main">
             <table border="1" cellpadding="10" cellspacing="0">
